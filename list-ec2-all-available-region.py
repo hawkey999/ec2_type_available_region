@@ -66,8 +66,9 @@ region_list={"us-east-2": "US East (Ohio)",
 # Search instance type in all available regions
 instance_type = input('Enter an instance type(default: t2.micro): ') or 't2.micro'
 if "." not in instance_type:
-    instance_type = instance_type + ".large"
+    instance_type = instance_type + ".xlarge"
 available_regions = get_available_regions_for_instance_type(instance_type)
+available_regions.sort()
 print('\n')
 print(f'The {instance_type} instance type is available in the following regions with your AWS account:')
 for region in available_regions:
