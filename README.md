@@ -2,15 +2,16 @@
 Check a ec2 type availability in all aws regions
 
 ## How to Use
+```
 python3 list-ec2-all-available-region.py
 
 Enter an instance type(default: t2.micro): t2.micro
-
+```
 ## Example return
-Checking t2.micro instance type in region: ap-south-2 Asia Pacific (Hyderabad)...AuthFailure, cannot access ap-south-2
-Checking t2.micro instance type in region: ap-south-1 Asia Pacific (Mumbai)...Available
-Checking t2.micro instance type in region: eu-south-1 Europe (Milan)...AuthFailure, cannot access eu-south-1
-Checking t2.micro instance type in region: eu-south-2 Europe (Spain)...AuthFailure, cannot access eu-south-2
+```Checking t2.micro instance type in region: ap-south-2 Asia Pacific (Hyderabad)...AuthFailure, cannot access ap-south-2  
+Checking t2.micro instance type in region: ap-south-1 Asia Pacific (Mumbai)...Available  
+Checking t2.micro instance type in region: eu-south-1 Europe (Milan)...AuthFailure, cannot access eu-south-1 
+Checking t2.micro instance type in region: eu-south-2 Europe (Spain)...AuthFailure, cannot access eu-south-2  
 Checking t2.micro instance type in region: me-central-1 Middle East (UAE)...AuthFailure, cannot access me-central-1
 Checking t2.micro instance type in region: il-central-1 Israel (Tel Aviv)...AuthFailure, cannot access il-central-1
 Checking t2.micro instance type in region: ca-central-1 Canada (Central)...Available
@@ -54,3 +55,4 @@ ap-southeast-1     Asia Pacific (Singapore)
 ap-southeast-2     Asia Pacific (Sydney)         
 us-east-1          US East (N. Virginia)         
 us-east-2          US East (Ohio)               
+```
